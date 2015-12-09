@@ -10,7 +10,7 @@
 		<button id="btn2">btn2</button>
 		<button id="btn3">btn3</button>
 		<script>
-			$(document).click(function (event) {  
+			$('button').click(function (event) {  
 				$.get(window.location.pathname+"?clicked="+$(event.target).attr('id'), function( data ) {
 				 	console.log("Clicked: "+$(event.target).attr('id'));
 				});
